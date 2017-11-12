@@ -78,7 +78,7 @@
                 android:fontFamily="@font/medievalsharp"
                 android:paddingLeft="5dp"
                 android:paddingTop="15dp"
-                android:text="Bran / Transilvania"
+                android:text="@string/location"
                 android:textColor="#D50000"
                 android:textSize="14sp" />
 
@@ -131,7 +131,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_toRightOf="@id/working_high_icon"
                             android:fontFamily="@font/medievalsharp"
-                            android:text="High  season "
+                            android:text="@string/high_season_title"
                             android:textColor="#D50000"
                             android:textSize="14sp" />
 
@@ -142,7 +142,7 @@
                             android:layout_below="@id/workinh_high_text"
                             android:layout_marginLeft="5dp"
                             android:fontFamily="@font/medievalsharp"
-                            android:text="(APRIL 1 - SEPTEMBER 30)"
+                            android:text="@string/high_season_period"
                             android:textColor="#D50000"
                             android:textSize="14sp" />
 
@@ -192,7 +192,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_toRightOf="@id/working_low_icon"
                             android:fontFamily="@font/medievalsharp"
-                            android:text="Low  season "
+                            android:text="@string/low_season_title"
                             android:textColor="#D50000"
                             android:textSize="14sp" />
 
@@ -203,7 +203,7 @@
                             android:layout_below="@id/working_low_text"
                             android:layout_marginLeft="5dp"
                             android:fontFamily="@font/medievalsharp"
-                            android:text="(OCTOBER 1 - MARCH 31)"
+                            android:text="@string/low_season_period"
                             android:textColor="#D50000"
                             android:textSize="14sp" />
 
@@ -244,7 +244,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_toRightOf="@id/car_icon"
                 android:fontFamily="@font/medievalsharp"
-                android:text="How to Reach"
+                android:text="@string/car_instructions_title"
                 android:textColor="#D50000"
                 android:textSize="14sp" />
 
