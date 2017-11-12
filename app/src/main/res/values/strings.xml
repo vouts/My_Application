@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Vouts App</string>
+    <string name="title">Dracula\'s Castle</string>
+    <string name="intro_text">
+        Draculas castle (Bran Castle) was the home of Vlad Tepes a.k.a. Count Dracula.\nVlad(1428-1476)  was voivode (or prince) of Wallachia three times between 1448 and his death.\nHe became to be known as Count Dracula from Bram Stoker\'s book called \'Dracula\' published in 1897.
+    </string>
+    <string name="schedule"> <u>Working Hours</u></string>
+
+    <string name="low_calendar">Monday: 12PM - 4PM\nTue–Sun:	9AM - 4PM\nLast Admission: 4PM</string>
+    <string name="high_calendar">Monday: 12PM - 6PM\nTue–Sun:	9AM - 6PM\nLast Admission: 6PM</string>
+    <string name="car_instructions">From Bucharest, head north on DN1/E60, pass by Ploiesti, continue to follow DN1/E60, after Azuga turn left on DN73A, at Rasnov turn left onto DN73/E574, drive 10KMs and Bran Castle will be on the left.</string>
+
 </resources>

@@ -1,55 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context="com.example.stelios.myapplication.MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:scaleType="fitStart"
-        android:src="@drawable/castle" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Happy Birthday, John!"
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medievalsharp"
+                android:gravity="center"
+                android:text="@string/title"
+                android:textColor="#D50000"
+                android:textSize="36sp" />
 
-            android:textSize="36sp"
-            android:fontFamily="sans-serif-Light"
-            android:textColor="@android:color/white"
-            android:layout_margin="20dp"
-            android:id="@+id/textView" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="From, Vouts!"
-
-            android:textSize="36sp"
-            android:fontFamily="sans-serif-Light"
-            android:textColor="@android:color/white"
-            android:layout_margin="20dp"
-            />
+            <ImageView
+                android:id="@+id/Dracula_Castle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/castle" />
 
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/info_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/Dracula_Castle"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/information" />
+
+            <TextView
+                android:id="@+id/Intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Dracula_Castle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/info_icon"
+                android:fontFamily="@font/medievalsharp"
+                android:text="@string/intro_text"
+                android:textColor="#D50000"
+                android:textSize="14sp" />
 
 
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/Intro"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Intro"
+                android:layout_toRightOf="@id/location_icon"
+                android:fontFamily="@font/medievalsharp"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp"
+                android:text="Bran / Transilvania"
+                android:textColor="#D50000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/location_icon"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/medievalsharp"
+                android:gravity="center"
+                android:text="@string/schedule"
+                android:textColor="#D50000"
+                android:textSize="14sp" />
 
 
+            <LinearLayout
+                android:id="@+id/boards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/schedule"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/high_season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/working_high_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/calicon" />
+
+                        <TextView
+                            android:id="@+id/workinh_high_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/working_high_icon"
+                            android:fontFamily="@font/medievalsharp"
+                            android:text="High  season "
+                            android:textColor="#D50000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/high_months"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/workinh_high_text"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/medievalsharp"
+                            android:text="(APRIL 1 - SEPTEMBER 30)"
+                            android:textColor="#D50000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/high_calendar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/high_months"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/medievalsharp"
+                            android:text="@string/high_calendar"
+                            android:textColor="#D50000"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
 
 
+                </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/low_season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/working_low_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/calicon" />
+
+                        <TextView
+                            android:id="@+id/working_low_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@id/working_low_icon"
+                            android:fontFamily="@font/medievalsharp"
+                            android:text="Low  season "
+                            android:textColor="#D50000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/low_months"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/working_low_text"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/medievalsharp"
+                            android:text="(OCTOBER 1 - MARCH 31)"
+                            android:textColor="#D50000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/low_calendar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/low_months"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/medievalsharp"
+                            android:text="@string/low_calendar"
+                            android:textColor="#D50000"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/car_icon"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/boards"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/caricon" />
+
+            <TextView
+                android:id="@+id/car_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/boards"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/car_icon"
+                android:fontFamily="@font/medievalsharp"
+                android:text="How to Reach"
+                android:textColor="#D50000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/car_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/car_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/car_icon"
+                android:fontFamily="@font/medievalsharp"
+                android:text="@string/car_instructions"
+                android:textColor="#D50000"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
