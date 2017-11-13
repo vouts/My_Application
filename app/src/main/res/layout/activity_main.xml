@@ -40,7 +40,6 @@
                 android:id="@+id/info_icon"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_alignParentLeft="true"
                 android:layout_below="@id/Dracula_Castle"
                 android:layout_marginTop="5dp"
                 android:paddingLeft="5dp"
@@ -50,10 +49,10 @@
                 android:id="@+id/Intro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/info_icon"
                 android:layout_below="@id/Dracula_Castle"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_toRightOf="@id/info_icon"
                 android:fontFamily="@font/medievalsharp"
                 android:text="@string/intro_text"
                 android:textColor="#D50000"
@@ -64,17 +63,17 @@
                 android:id="@+id/location_icon"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_alignBottom="@+id/textView"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@id/Intro"
-                android:layout_marginTop="15dp"
                 android:paddingLeft="5dp"
                 android:src="@drawable/location" />
 
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/Intro"
-                android:layout_toRightOf="@id/location_icon"
+                android:layout_below="@+id/Intro"
+                android:layout_toRightOf="@+id/location_icon"
                 android:fontFamily="@font/medievalsharp"
                 android:paddingLeft="5dp"
                 android:paddingTop="15dp"
@@ -86,8 +85,6 @@
                 android:id="@+id/schedule"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
                 android:layout_below="@+id/location_icon"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/medievalsharp"
@@ -120,7 +117,7 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
+                            android:layout_marginTop="5dp"
                             android:src="@drawable/calicon" />
 
                         <TextView
@@ -181,7 +178,7 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
+                            android:layout_marginTop="5dp"
                             android:src="@drawable/calicon" />
 
                         <TextView
@@ -237,7 +234,7 @@
 
             <TextView
                 android:id="@+id/car_title"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/boards"
                 android:layout_marginLeft="5dp"
@@ -250,7 +247,7 @@
 
             <TextView
                 android:id="@+id/car_instructions"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/car_title"
                 android:layout_marginLeft="5dp"
